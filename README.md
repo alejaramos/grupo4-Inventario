@@ -4,8 +4,8 @@
 
 ### 📂 1. Clonar el Repositorio
 ```bash
-git clone <url-del-repositorio>
-cd grupo4
+git clone git@github.com:alejaramos/grupo4-Inventario.git
+cd grupo4-Inventario
 ```
 
 ---
