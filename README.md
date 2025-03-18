@@ -18,7 +18,16 @@ npm install
 ---
 
 ### 🗃️ 3. Configurar la Base de Datos
-Actualiza las credenciales en el archivo `config/config.json` según tu entorno.
+Actualiza las credenciales en el archivo `config/config.json` según tu entorno. 
+{
+  "development": {
+    "username": "ingridramos", //nombre de usuario de postgres
+    "password": null, //password de usuario de postgres
+    "database": "inventory", //nombre de la base de datos postgres
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
 
 ---
 
