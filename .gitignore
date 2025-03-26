@@ -1,0 +1,65 @@
+# Dependencias de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Archivos de configuración específicos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+logs/
+*.log
+logs/**/*.log
+
+# Cachés y compilaciones
+.cache/
+dist/
+build/
+.tmp/
+out/
+
+# Archivos de procesos y PID
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Directorios de pruebas y cobertura
+coverage/
+.nyc_output/
+
+# Archivos de depuración
+*.swp
+*.swo
+
+# Configuración del editor de código
+.vscode/
+.idea/
+*.iml
+
+# Ignorar dependencias específicas de paquetes
+.npm/
+.yarn/
+
+# Archivos de Docker
+docker-compose.override.yml
+
+# Archivos de Firebase y Google Cloud
+.firebase/
+.firebaserc
+gcloud-debug.log
+
+# Otros archivos sensibles o innecesarios
+.ssh/
+*.pem
+*.key
