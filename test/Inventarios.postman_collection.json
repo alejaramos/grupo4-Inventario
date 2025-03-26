@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "10b186b7-e622-4a54-95e5-24405b736c7e",
+		"name": "Inventarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 8764b5a4fef8910d5a7dd3ffa965ed2ee0503521898bb1364f1ce98596dcfcc2",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPorID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 8764b5a4fef8910d5a7dd3ffa965ed2ee0503521898bb1364f1ce98596dcfcc2",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/items/318bed04-abfd-4454-9bff-ebe187bcc5f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items",
+						"318bed04-abfd-4454-9bff-ebe187bcc5f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 8764b5a4fef8910d5a7dd3ffa965ed2ee0503521898bb1364f1ce98596dcfcc2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"name\": \"Proyector LED\",\r\n    \"quantity\": 6,\r\n    \"price\": 500.00,\r\n    \"description\": \"Proyector portátil de alta resolución\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 8764b5a4fef8910d5a7dd3ffa965ed2ee0503521898bb1364f1ce98596dcfcc2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop Gamer\",\r\n  \"quantity\": 3,\r\n  \"price\": 1500.75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/items/bea7da49-aa79-4370-bf9c-d595d2492f81",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items",
+						"bea7da49-aa79-4370-bf9c-d595d2492f81"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 8764b5a4fef8910d5a7dd3ffa965ed2ee0503521898bb1364f1ce98596dcfcc2",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/items/13cd2936-9dc6-4dde-b576-429f1276b0bd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items",
+						"13cd2936-9dc6-4dde-b576-429f1276b0bd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
